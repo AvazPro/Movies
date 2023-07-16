@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.movies {
+    padding: 35px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.movie {
+    width: 23%;
+    padding: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: dodgerblue;
+    border-radius: 12px;
+    color: white;
+    margin-bottom: 40px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.title {
+    margin-top: 0;
+}
+.ctgs {
+    list-style-type: square;
+    padding-left: 27px;
+}
+.ctgs li {
+    margin-bottom: 10px;
+}
+.sum-link {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    padding: 5px 12px;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+.sum-link:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+.trailer {
+    text-decoration: none;
+    background-color: #FF0000;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border: 3px solid #f00;
+    padding: 5px 12px;
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.rating {
+    font-size: 60px;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 8px;
+    color: dodgerblue;
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 20px 0;
+}
+.form {
+    text-align: center;
+    border-bottom: 5px solid dodgerblue;
+    padding: 30px;
+}
+.input, .select, .btn {
+    border: 3px solid dodgerblue;
+    padding: 8px;
+    font-size: 24px;
+    border-radius: 8px;
+}
+.btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: dodgerblue;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media(min-width: 1800px) {
+    .container {
+        margin: 0 150px;
+    }
+}
+@media(max-width: 1535px) {
+    .movie {
+        width: 21%;
+        margin-right: 3px;
+    }
+    .movie:last-child {
+        margin: 0;
+    }
+    .sum-link {
+        font-size: 14px;
+        border: 1.5px solid white;
+    }
+    .trailer {
+        margin-left: 0;
+        font-size: 14px;
+        padding: 3px 5px;
+        border: 1.5px solid red;
+    }
+    .rating {
+        font-size: 45px;
+        font-weight: bold;
+        background-color: #fff;
+        border-radius: 8px;
+        color: dodgerblue;
+        display: inline-block;
+        padding: 2px 14px;
+        margin: 15px 0;
+    }
+}
+@media(max-width: 1330px) {
+    .movie {
+        width: 25%;
+    }
+}
+@media(max-width: 1260px){
+    .movie {
+        width: 32%;
+    }
+}
+
+@media(max-width: 1135px){
+    .movie {
+        width: 32%;
+    }
+}
+@media(max-width: 1073px){
+    .btn {
+        margin-top: 15px;
+    }
+}
+@media(max-width: 910px){
+    .movie {
+        width: 40%;
+    }
+}
+@media(max-width: 780px){
+    .movie {
+        width: 45%;
+    }
+}
+@media(max-width: 680px){
+    .movie {
+        width: 49%;
+    }
+}
+@media(max-width: 630px){
+    .movie {
+        width: 80%;
+    }
+    .movies {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sum-link {
+        font-size: 14px;
+        border: 1.5px solid white;
+    }
+    .trailer {
+        margin-left: 0;
+        font-size: 13px;
+        padding: 3px 5px;
+        border: 1.5px solid red;
+    }
+    .rating {
+        font-size: 38px;
+        font-weight: bold;
+        background-color: #fff;
+        border-radius: 8px;
+        color: dodgerblue;
+        display: inline-block;
+        padding: 1px 10px;
+        margin: 10px 0;
+    }
+}
+@media(max-width: 580px){
+    .select {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+    .select:last-child {
+        margin-bottom: 0;
+    }
+    #nameinput {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .btn {
+        width: 100%;
+    }
+}
+@media(max-width: 500px){
+    .movie {
+        width: 98%;
+    }
+    .movies {
+        padding: 20px 30px;
+    }
+}
+@media(max-width: 330px){
+    .movies {
+        padding: 10px 18px;
+        margin: 0;
+    }
+    .movie {
+        width: 100%;
+    }
+    .container {
+        margin: 0;
+    }
+}
